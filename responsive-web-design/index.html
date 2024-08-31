@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Free Code University</p>
+<form id="survey-form">
+  <label id="name-label" for="name" >Name: <input id="name" type="text" placeholder="Natalie" required/></label>
+
+  <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="info@surveyform.co"  required/></label>
+
+  <label id="number-label" for="age">Age: <input id="number" type="number" min="18" max="30" placeholder="18"/></label>
+
+<label for="dropdown">Faculty: 
+<select id="dropdown">  
+    <option>Select</option>
+    <option>Business</option>
+    <option>Engineering</option>
+    <option>Social Science</option>
+    <option>Science</option>
+  </select></label>
+
+<legend>Gender: </legend>
+<label for="female"><input id="gender" type="radio" name="gender" value="0"/> Female </label>
+<label for="male"><input id="gender" type="radio" name="gender" value="1"/> Male </label>
+
+<legend>Notifications: </legend>
+<label for="mail"><input id="mail" type="checkbox" name="noti" value="0"/> Mail </label>
+<label for="sms"><input id="sms" type="checkbox" name="noti" value="1"/> SMS </label>
+<br>
+<label for="feedback">Leave a message: </label>
+<textarea id="feedback" type="textarea" name="feedback" rows="3" cols="30"></textarea>
+<button id="submit" type="submit">Submit</button>
+</form>
+</body>
+
+</html>
