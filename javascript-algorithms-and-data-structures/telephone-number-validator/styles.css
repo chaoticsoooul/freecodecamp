@@ -6,22 +6,87 @@
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
-  }
-  
-  *{
-    font-size: 32px;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    font-family: Verdana ;
-  }
-  
-  button:hover {
-    background-color: #333333;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  div {
+}
+
+*{
+    margin: 0px;
     padding: 0px;
-  }
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Add padding for mobile */
+    margin-top: 100px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the container */
+    max-width: 350px;
+    width: 100%;
+ 
+}
+
+input, #results-div {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 100%;
+}
+
+p {
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #50c878; /* Emerald green */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Ensure buttons take equal space */
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: #50c878; /* Emerald green */
+    box-shadow: 0 0 5px rgba(80, 200, 120, 0.5);
+}
+
+button:hover {
+    background-color: #45b76a; /* Darker emerald green */
+}
+
+#results-div {
+    background-color: #fff;
+    visibility: hidden;
+}
+
