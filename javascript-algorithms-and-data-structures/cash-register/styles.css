@@ -1,5 +1,21 @@
 *{
-    padding: 10px;
-    font-size: 32px;
+    padding: 0px;
     font-family: Helvetica;
+    margin: 0px;
   }
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 20px;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+}
+

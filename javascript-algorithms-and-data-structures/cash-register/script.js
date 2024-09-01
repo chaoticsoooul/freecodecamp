@@ -6,15 +6,6 @@ const changeDue = document.getElementById("change-due");
 const purchaseBtn = document.getElementById("purchase-btn");
 
 
-
-
-
-
-
-
-
-
-
 let values = [0.01, 0.05, 0.1, 0.25, 1, 5, 10, 20, 100]
 
 let text = ""
