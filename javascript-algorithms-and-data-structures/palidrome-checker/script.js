@@ -6,7 +6,8 @@ function isPalidrome(str){
 return str == str.split('').reverse().join('')
 }
 
-const clickButton = () => {
+const clickButton = (e) => { 
+  e.preventDefault();
   result.innerText = "";
   
   const text = input.value;
